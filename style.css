@@ -1,0 +1,101 @@
+
+.header_box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    height: 75px;
+}
+.left{
+    display: flex;
+    align-items: center;
+    gap:15px;
+    margin-left: 15px;
+}
+
+.right{
+    display: flex;
+    gap: 60px;
+    margin-right: 40px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px ;
+}
+
+header img{
+    max-height: 50px;
+    width: auto;
+}
+
+body{
+    margin: 0%;
+    background-color: black;
+}
+.introduction{
+    display: flex;
+    justify-content: center;
+    line-height: 20px;
+    background-image: url(image\ copy.png);
+    background-size: cover;
+    height: 719px;
+    width: 1600px;
+}
+
+h1 {
+    text-align: center;
+    color: rgb(255, 61, 45);
+    font-size: 250px;
+    margin-top: 110px;
+    margin-bottom: 90px;
+}
+h2 {
+    margin-top: 0px;
+    text-align: center ;
+    font-size: 100px;
+    color: white;
+}
+h3 {
+    margin-top: 150px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+
+}
+h4{
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+.operator{
+    display: flex;
+}
+.left_o{
+    margin: 50px;
+    border: 50px solid white;
+    border-radius: 50px;
+    width: 640px;
+    height: 640px;
+}
+.left_o video {
+    width: 640px;
+    height: 640px;
+    border: 3px solid white;
+    border-radius: 10px;
+}
+
+.right_o{
+    margin: 50px;
+    width: 640px;
+    height: 640px;
+    border: 50px solid white;
+    border-radius: 50px;
+}
+p{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    text-align: center;
+    padding: 50px   ;
+}
