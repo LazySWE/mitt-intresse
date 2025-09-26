@@ -71,31 +71,25 @@ h4{
 }
 .operator{
     display: flex;
-}
-.left_o{
-    margin: 50px;
-    border: 50px solid white;
-    border-radius: 50px;
-    width: 640px;
-    height: 640px;
-}
+}  
 .left_o video {
+    margin: 50px;
     width: 640px;
     height: 640px;
-    border: 3px solid white;
-    border-radius: 10px;
+    border: 10px solid red;
+    border-radius: 100px;
 }
 
 .right_o{
     margin: 50px;
     width: 640px;
     height: 640px;
-    border: 50px solid white;
-    border-radius: 50px;
+    border: 10px solid red;
+    border-radius: 100px;
 }
 p{
     color: rgb(255, 255, 255);
     font-size: 40px;
     text-align: center;
-    padding: 50px   ;
+    padding: 50px;
 }
