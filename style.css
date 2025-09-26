@@ -41,7 +41,7 @@ body{
     background-image: url(image\ copy.png);
     background-size: cover;
     height: 719px;
-    width: 1600px;
+    width: 100%;
 }
 
 h1 {
