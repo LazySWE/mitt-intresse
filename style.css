@@ -1,124 +1,142 @@
 
-.header_box{
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.header_box {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: black;
+    padding: 0 2%;
     height: 75px;
 }
-.left{
+
+.left, .right {
     display: flex;
     align-items: center;
-    gap:15px;
-    margin-left: 15px;
+    gap: 1rem;
 }
 
-.right{
-    display: flex;
-    gap: 60px;
-    margin-right: 40px;
+.right {
+    gap: clamp(1rem, 5vw, 4rem);
 }
 
-a{
+a {
     text-decoration: none;
     color: white;
-    font-size: 30px ;
+    font-weight: bold;
+    font-size: clamp(16px, 2vw, 40px);
+    padding: 10px;
+    transition: 0.5s;
 }
 
-header img{
+a:hover {
+    color: rgb(243, 87, 87);
+}
+
+header img {
     max-height: 50px;
     width: auto;
 }
 
-body{
-    margin: 0%;
+
+body {
     background-color: black;
 }
-.introduction{
+
+
+.introduction {
     display: flex;
     justify-content: center;
-    line-height: 20px;
-    background-image: url(image\ copy.png);
+    align-items: center;
+    text-align: center;
+    background-image: url("image copy.png");
     background-size: cover;
-    height: 719px;
-    width: 100%;
+    background-position: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 0 2%;
 }
 
-h1 {
-    text-align: center;
+.TOM_CLANCYS {
+    color: white;
+    font-size: clamp(20px, 2vw, 30px);
+}
+
+.RAINBOW_6 {
+    color: white;
+    font-size: clamp(50px, 10vw, 100px);
+}
+
+.SIEGE_X {
+    font-family: 'Times New Roman', Times, serif;
     color: rgb(255, 61, 45);
-    font-size: 250px;
-    margin-top: 110px;
-    margin-bottom: 90px;
-}
-h2 {
-    margin-top: 0px;
-    text-align: center ;
-    font-size: 100px;
-    color: white;
-}
-h3 {
-    margin-top: 150px;
-    text-align: center;
-    color: white;
-    font-size: 30px;
-
-}
-h4{
-    color: white;
-    text-align: center;
-    font-size: 40px;
-}
-.gap_1{
-    background-color: rgb(9, 0, 59);
-    height: 10px;
-    opacity: 100%;
-}
-.operator{
-    display: flex;
-    background-image: url(r6s-highstakes-header.avif);
-}  
-.left_o video {
-    margin: 50px;
-    width: 570px;
-    height: 570px;
-    border: 1px solid white;
-    border-radius: 100px;
+    font-size: clamp(100px, 20vw, 300px);
+    line-height: 1;
 }
 
-.right_o{
-    background-color: rgb(0, 0, 0,0.7);
-    margin: 50px;
-    width: 570px;
-    height: 570px;
-    border: 1px solid white;
-    border-radius: 100px;
+.Competitive_FPS_Game {
+    color: white;
+    font-size: clamp(20px, 3vw, 40px);
 }
-p{
-    color: rgb(255, 255, 255);
-    font-size: 40px;
-    text-align: center;
-    padding: 63px;
-}
-.gap_2{
+
+
+.gap_1 {
     background-color: rgb(9, 0, 59);
     height: 10px;
 }
-.esport{
+
+
+.operator {
     display: flex;
-    position: relative;
-    height: 719px;
-    background-image: url(ff2e939220e2-rainbow-six-siege-invitationals-esports-logo.jpg);
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2%;
+    background-image: url("r6s-highstakes-header.avif");
     background-size: cover;
+    padding: 50px 0;
 }
-.video_box{
-    width: 570px;
-    height: 570px;
+
+.left_o, .right_o {
+    flex: 1 1 300px; 
+    max-width: 570px;
+    border: 1px solid white;
+    border-radius: 30px;
     overflow: hidden;
-    position: relative;
 }
-.video_box video{
+
+.left_o video {
     width: 100%;
-    height:100%;
-    object-fit:cover
+    height: auto;
+    display: block;
+    border-radius: inherit;
+}
+
+.right_o {
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Denari_text {
+    color: white;
+    font-size: clamp(16px, 2vw, 40px);
+    padding: 2rem;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .operator {
+        flex-direction: column;
+        padding: 20px 0;
+    }
+    .SIEGE_X {
+        font-size: clamp(80px, 15vw, 150px);
+    }
 }
