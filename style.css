@@ -96,15 +96,17 @@ body {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 2%;
+    gap: 5%;
     background-image: url("r6s-highstakes-header.avif");
     background-size: cover;
+    height: 100vh;
     padding: 50px 0;
 }
 
 .left_o, .right_o {
-    flex: 1 1 300px; 
-    max-width: 570px;
+    flex: 1 1 75vh; 
+    max-width: 75vh;
+    height: 75vh;
     border: 1px solid white;
     border-radius: 30px;
     overflow: hidden;
@@ -114,7 +116,6 @@ body {
     width: 100%;
     height: auto;
     display: block;
-    border-radius: inherit;
 }
 
 .right_o {
@@ -129,14 +130,4 @@ body {
     font-size: clamp(16px, 2vw, 40px);
     padding: 2rem;
     text-align: center;
-}
-
-@media (max-width: 768px) {
-    .operator {
-        flex-direction: column;
-        padding: 20px 0;
-    }
-    .SIEGE_X {
-        font-size: clamp(80px, 15vw, 150px);
-    }
 }
